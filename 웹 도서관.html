@@ -50,7 +50,8 @@ body {
     a:hover, a:focus {filter: brightness(0.7);}
       </style>
 </head>
-<body><center><br>
+<body onload="openImageWindow()"> <center> <br>
+          
     <a href="home.html"><IMG src="https://i.ibb.co/XjJCKm0/2023-Planet.png" alt="logo" width="200"></IMG></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="https://i.ibb.co/D9vfzZW/image.png" alt="제목_ 웹 도서관" width="600"><br><br><br><br>      
    <a href="#" onclick="swal('이야기가 곧 연재돼요!','잠시만 기다려주세요!','warning')"><div style="padding:10px; word-break:keep-all; width:1000px; background-color:#606060; color:#6570DA; border-radius:10px; font-size:1.2em; ">
@@ -74,6 +75,12 @@ body {
 
 </center>
 
+  <script>
+    function openImageWindow() {
+      window.open("path/to/image.jpg", "_blank", "width=600, height=400");
+    }
+  </script>
+          
 <script>
   (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.")}var ch=function(){ch.c(arguments)};ch.q=[];ch.c=function(args){ch.q.push(args)};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x)}}if(document.readyState==="complete"){l()}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l)}})();
 
