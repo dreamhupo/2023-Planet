@@ -58,6 +58,24 @@ body {
     <br><br><a href="home.html"><img src="https://i.ibb.co/RyNwNmX/image.png" alt="시작하기" width="210"></a>
     <br><br><br><br>
   </center>
+
+           <script>
+  // 페이지가 로드되면 실행될 함수
+  window.onload = function() {
+    // SweetAlert 커스텀 모달 창 열기
+    swal({
+      button: "시작하기",
+      closeOnClickOutside: false,
+      content: {
+        element: "img",
+        attributes: {
+          src: "https://i.ibb.co/Pgk01mX/2023-Planet-2.png",
+          width: 430
+        },
+      },
+    });
+  };
+</script>
 </body>
 </html>
 
