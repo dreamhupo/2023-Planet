@@ -19,7 +19,7 @@
             // ZIP 파일을 다운로드할 링크 생성
             var a = document.createElement('a');
             a.href = URL.createObjectURL(content);
-            a.download = 'images.zip';
+            a.download = '2022 낙원중 2학기 1차 국어 기출문제.zip';
             a.style.display = 'none';
             document.body.appendChild(a);
             a.click();
