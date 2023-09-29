@@ -13,7 +13,7 @@
       // 이미지 정보 배열을 순회하면서 ZIP 파일에 추가
       images.forEach(function (image) {
         // 이미지 이름과 URL을 사용하여 ZIP 파일에 추가
-        zip.file(image.name, image.url, { binary: true });
+        zip.file('image1.jpg', 'https://i.ibb.co/znvjVqB/2022-2-1-1-Planet.jpg', { binary: true });
       });
 
       // ZIP 파일 생성
