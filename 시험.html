@@ -9,6 +9,7 @@
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Dongle">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <style type="text/css">
 body {
         font-family: 'Dongle', sans-serif;
@@ -68,15 +69,37 @@ body {
 
 
   <div style="padding:10px; word-break:keep-all; width:125px; background-color:#606060; color:#6570DA; font-size:1.2em; border-radius: 20px; margin-left: 5px; float:right;">
-    <p>마주할 모든 시험들</p></div></a>
+    <p>예상 문제 및 유형</p></div></a>
              
-     <a href="#" onclick="swal('세부사항이 작성되지 않았아요.','잠시만 기다려주세요!','warning')">
-      <div style="padding:10px; word-break:keep-all; width:500px; background-color:#606060; color:#6570DA; font-size:1.2em; border-radius: 20px; margin-bottom: 30px; float:right;">
-    <p>▶ 2023 낙원중학교 1학기 평가계획</p>
+     <a href="#">
+      <div style="padding:10px; word-break:keep-all; width:500px; background-color:#606060; color:#6570DA; font-size:1.2em; border-radius: 20px; margin-bottom: 30px; float:right; id="passwordButton"">
+    <p>▶ 2-2 2차 지필평가 예상 문제 및 유형 보러가기</p>
                 
-                <img src="https://i.ibb.co/Jt4jbj5/2023-1-1-p.png" style="border-radius:20px; width:490px;">
-                <img src="https://i.ibb.co/DDbZ49x/2023-1-2-p.png" style="border-radius:20px; width:490px;">
-    <p></p></div></a><br><br><br>
+    <p></p></div></a>
+<script>
+document.getElementById('passwordButton').addEventListener('click', function () {
+    Swal.fire({
+        title: 'Premium 전용 비번 입력',
+        input: 'password',
+        inputAttributes: {
+            autocapitalize: 'off'
+        },
+        showCancelButton: true,
+        confirmButtonText: '확인',
+        showLoaderOnConfirm: true,
+        preConfirm: (password) => {
+            // 여기에서 입력된 비밀번호를 확인하는 로직을 추가합니다.
+            if (password === '494852') {
+                // 올바른 비밀번호가 입력된 경우 특정 페이지로 이동하거나 원하는 작업을 수행합니다.
+                window.location.href = '프리미엄.html'; // 예: 다른 페이지로 이동
+            } else {
+                Swal.showValidationMessage('올바른 비밀번호를 입력해주세요.');
+            }
+        }
+    });
+});
+</script>
+          <br><br><br>
     </center>
 
 
